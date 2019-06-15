@@ -95,6 +95,9 @@
         "allowEmptyCatch": true
       }
     ],
+    "no-magic-numbers": [
+      "off"
+    ],
     "no-multi-spaces": [
       "error"
     ],
