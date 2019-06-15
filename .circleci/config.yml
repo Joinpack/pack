@@ -26,7 +26,7 @@ jobs:
             - ~/.cache/yarn
       - run:
           name: test
-          command: ./node_modules/.bin/nyc yarn test
+          command: ./node_modules/.bin/nyc yarn test --coverage --watchAll=false
       - run:
           name: Upload code coverage
           command: |
