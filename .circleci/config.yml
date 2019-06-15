@@ -27,7 +27,12 @@ jobs:
           command: yarn test
       - run:
           name: code-coverage
-          command: |
-            ./node_modules/.bin/nyc report --reporter=json > coverage/coverage.json
-            codecov --file coverage/coverage.json
-          when: on_success
+          command: './node_modules/.bin/nyc report --reporter=text-lcov'
+      - store_artifacts:
+          path: test-results.xml
+          prefix: tests
+      - store_artifacts:
+          path: coverage
+          prefix: coverage
+      - store_test_results:
+          path: test-results.xml
