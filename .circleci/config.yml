@@ -24,7 +24,7 @@ jobs:
             - ~/.cache/yarn
       - run:
           name: test
-          command: yarn test
+          command: nyc yarn test
       - run:
           name: code-coverage
           command: './node_modules/.bin/nyc report --reporter=text-lcov'
