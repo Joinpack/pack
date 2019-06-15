@@ -18,7 +18,7 @@ jobs:
           name: Install Dependencies
           command: |
             yarn install --frozen-lockfile
-            yarn add codecov
+            yarn global add codecov
       - save_cache:
           name: Save Yarn Package Cache
           key: yarn-packages-{{ checksum "yarn.lock" }}
@@ -30,6 +30,6 @@ jobs:
       - run:
           name: Upload code coverage
           command: |
-            ./node_modules/.bin/nyc report --reporter=json > coverage/coverage.json
-            codecov
+            ./node_modules/.bin/nyc report --reporter=text-lcov > coverage.lcov
+            ./node_modules/.bin/codecov
           when: on_success
