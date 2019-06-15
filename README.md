@@ -1,6 +1,17 @@
 # Pack
 
 [![CircleCI](https://circleci.com/gh/Showtime-Hackers/pack/tree/develop.svg?style=svg)](https://circleci.com/gh/Showtime-Hackers/pack/tree/develop)
+[![codecov](https://codecov.io/gh/Showtime-Hackers/pack/branch/develop/graph/badge.svg)](https://codecov.io/gh/Showtime-Hackers/pack)
+
+## Required Packages
+
+- NodeJS (v12)
+- Yarn
+
+## Getting Started
+
+1. Run `yarn`.
+2. Run `yarn start`
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
