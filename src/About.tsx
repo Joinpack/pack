@@ -10,6 +10,6 @@ export class About extends React.Component<AboutProps, {}> {
       <div>About Us</div>
     );
   }
-};
+}
 
 export default About;

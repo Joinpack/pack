@@ -44,5 +44,9 @@
       "!<rootDir>/node_modules/",
       "!<rootDir>/path/to/dir/"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "@typescript-eslint/parser": "^1.10.2"
   }
 }
