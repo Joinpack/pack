@@ -1,3 +1,7 @@
+# Pack
+
+[![CircleCI](https://circleci.com/gh/Showtime-Hackers/pack/tree/develop.svg?style=svg)](https://circleci.com/gh/Showtime-Hackers/pack/tree/develop)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
